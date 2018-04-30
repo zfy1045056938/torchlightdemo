@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{513B3215-E27A-4035-AD06-920C12F387C5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>torNetwork</RootNamespace>
+    <AssemblyName>torNetwork</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExternalConsole>true</ExternalConsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Mono.CSharp" />
+    <Reference Include="MonoMac, Version=0.0.0.0, Culture=neutral" />
+    <Reference Include="UnityEditor">
+      <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\Managed\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\UnityExtensions\Unity\UnityAnalytics\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\UnityExtensions\Unity\Networking\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\Applications\Unity\Unity.app\Contents\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.ProtocolBuffersLite">
+      <HintPath>bin\Debug\Google.ProtocolBuffersLite.dll</HintPath>
+    </Reference>
+    <Reference Include="protoDll">
+      <HintPath>bin\Debug\protoDll.dll</HintPath>
+    </Reference>
+    <Reference Include="SocketServer">
+      <HintPath>bin\Debug\SocketServer.exe</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Dataflow">
+      <HintPath>bin\Debug\System.Threading.Tasks.Dataflow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\MemoryStream.cs" />
+    <Compile Include="Common\Message.cs" />
+    <Compile Include="Common\Packet.cs" />
+    <Compile Include="Common\ServerBundle.cs" />
+    <Compile Include="Common\ServerMsgReader.cs" />
+    <Compile Include="Common\SimpleJSON.cs" />
+    <Compile Include="Common\Util2.cs" />
+    <Compile Include="Actor.cs" />
+    <Compile Include="Game\PlayerActor.cs" />
+    <Compile Include="Game\WaterDog.cs" />
+    <Compile Include="Game\WorldActor.cs" />
+    <Compile Include="SocketServer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\NewShader.shader" />
+    <None Include="nameMap.json" />
+    <None Include="bin\Debug\Google.ProtocolBuffersLite.dll" />
+    <None Include="bin\Debug\SocketServer.exe" />
+    <None Include="bin\Debug\SocketServer.pdb" />
+    <None Include="bin\Debug\System.Threading.Tasks.Dataflow.dll" />
+    <None Include="bin\Debug\System.Threading.Tasks.Dataflow.xml" />
+    <None Include="bin\Debug\nameMap 2.json" />
+    <None Include="bin\Debug\nameMap.json" />
+    <None Include="bin\Debug\protoDll.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Common\" />
+    <Folder Include="Game\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

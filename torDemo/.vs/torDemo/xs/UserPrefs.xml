@@ -1,0 +1,55 @@
+﻿<Properties StartupConfiguration="{513B3215-E27A-4035-AD06-920C12F387C5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="torNetwork/SocketServer.cs">
+    <Files>
+      <File FileName="torNetwork/Program.cs" Line="9" Column="47" />
+      <File FileName="torNetwork/Properties/NewShader.shader" Line="14" Column="4" />
+      <File FileName="torNetwork/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="torNetwork/ClientApp.cs" Line="20" Column="1" />
+      <File FileName="torNetwork/nameMap.json" Line="11" Column="22" />
+      <File FileName="torNetwork/Common/MemoryStream.cs" Line="242" Column="19" />
+      <File FileName="torNetwork/Common/Util3.cs" Line="15" Column="4" />
+      <File FileName="torNetwork/Common/Packet.cs" Line="21" Column="15" />
+      <File FileName="torNetwork/Common/ServerBundle.cs" Line="12" Column="3" />
+      <File FileName="torNetwork/Actor.cs" Line="127" Column="24" />
+      <File FileName="torNetwork/Game/PlayerActor.cs" Line="2" Column="18" />
+      <File FileName="torNetwork/Game/WaterDog.cs" Line="1" Column="1" />
+      <File FileName="torNetwork/Game/WorldActor.cs" Line="1" Column="1" />
+      <File FileName="torNetwork/Common/ServerMsgReader.cs" Line="1" Column="1" />
+      <File FileName="torNetwork/Common/SimpleJSON.cs" Line="1" Column="1" />
+      <File FileName="torNetwork/SocketServer.cs" Line="1" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="torDemo" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True" />
+            <Node name="torNetwork" expanded="True">
+              <Node name="SocketServer.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="torDemo" expanded="True" selected="True">
+            <Node name="torNetwork" expanded="True">
+              <Node name="References" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/richard/torchlightdemo/torDemo/torNetwork/ClientApp.cs" relfile="torNetwork/ClientApp.cs" line="1" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.torNetwork PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>Script/Network/ClientApp.cs/ClientApp.cs.csproj</String>
+  </DisabledProjects>
+</Properties>
